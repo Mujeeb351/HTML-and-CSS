@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Writing Text Effect</title>
+
+    <style>
+
+        .container{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            
+        }
+
+        .container-text{
+            font-family: monospace;
+            font-size: 3rem;
+            color: rgb(180, 141, 12);
+            border-right: 3px solid;
+            width: 20ch;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(20), blink 0.5s step-end infinite alternate;
+
+        }
+
+        .container-text2{
+            font-family: monospace;
+            font-size: 3rem;
+            color: navy;
+            border-right: 3px solid;
+            width: 20ch;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 5s steps(20) infinite alternate, blink 0.5s step-end infinite alternate;
+
+        }
+
+        @keyframes typing{
+            from{
+                width: 0;
+            }
+        }
+
+        @keyframes blink{
+            50%{
+                border-color: transparent;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-text">This is typing demo.</div>
+        <div class="container-text2">This is typing demo.</div>
+    </div>
+    
+</body>
+</html>
